@@ -13,9 +13,10 @@ pip install mypkg
 Calculate a discounted price:
 
 ```python
-from mypkg import discount_price
+from mypkg import discount_price, Order
 
-final_price = discount_price(100.0, 20)
+order_data = Order(price=100.0, percent=20)
+final_price = discount_price(order_data)
 print(final_price)
 ```
 
